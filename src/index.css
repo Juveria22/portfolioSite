@@ -1,0 +1,109 @@
+/* --------------------------------------------- */
+/* 1. TAILWIND (must come first)                 */
+/* --------------------------------------------- */
+@import "tailwindcss";
+
+
+/* --------------------------------------------- */
+/* 2. GLOBAL CSS VARIABLES                       */
+/* --------------------------------------------- */
+@theme {
+    --color-rose100: #FDE5EC;
+    --color-rose200: #F8C8DC;
+    --color-cream1: #FFF6EB;
+    --color-cocoa: #D3AE9B;
+    --color-latte1: #F4E1D2;
+    --color-matcha1: #A8C3A0;
+    --color-berry: #FFAAC5;
+    --color-light-berry: #FDE2E4;
+    --color-matcha1: #5F7A4C;         /* primary text, headers */
+    --color-cream2: #F5EFE6;         /* main background */
+    --color-pistachio: #A7C59D;     /* light accents, subtle containers */
+
+    /* Supporting Cafe Colors */
+    --color-espresso: #2A1F1B;      /* strong headers, footers */
+    --color-oat-milk: #E8DDCC;      /* alternate light background */
+    --color-caramel: #D7A86E;       /* hover states, small details */
+    --color-dusty-sage: #8FA184;    /* section backgrounds, cards */
+    --color-mauve-mocha: #BFA5A0;   /* soft article backgrounds */
+    --color-cream: #F0EAD2;
+    --color-light-sage: #DDE5B6;
+    --color-matcha: #ADC178;
+    --color-latte: #A98467;
+    --color-brown: #6C584C;
+    --color-mocha: #5A3A31;
+}
+
+
+/* --------------------------------------------- */
+/* 3. BASE LAYER (Fonts, resets)                 */
+/* --------------------------------------------- */
+@layer base {
+  body {
+    font-family: 'VT323', monospace;
+  }
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+
+/* --------------------------------------------- */
+/* 4. CUSTOM UTILITIES (Markdown + Animations)   */
+/* --------------------------------------------- */
+@layer utilities {
+
+  @keyframes fade {
+    0% { opacity: 0; transform: translateY(4px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-4px); }
+  }
+
+  .animate-fade {
+    animation: fade 3s ease forwards;
+  }
+
+  /* Custom prose (blog markdown) */
+  .prose-custom h1,
+  .prose-custom h2,
+  .prose-custom h3,
+  .prose-custom h4 {
+    color: var(--color-mocha);
+    font-weight: 700;
+  }
+
+  .prose-custom p,
+  .prose-custom li,
+  .prose-custom code {
+    color: var(--color-mocha);
+  }
+
+  .prose-custom strong {
+    color: var(--color-mocha);
+  }
+
+  .prose-custom a {
+    color: var(--color-latte);
+    text-decoration: none;
+  }
+
+  .prose-custom a:hover {
+    text-decoration: underline;
+  }
+
+  .prose-custom code {
+    background: rgba(255,255,255,0.3);
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+
+  .prose-custom pre {
+    background: rgba(255,255,255,0.4);
+    padding: 12px;
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+}

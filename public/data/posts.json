@@ -1,0 +1,20 @@
+[
+  {
+    "title": "How I Deployed My AI Wellness Assistant",
+    "slug": "deploying-wellness-assistant",
+    "file": "/blog/matchai.md",
+    "color": "berry"
+  },
+  {
+    "title": "Lessons from Building a Real-Time Multiplayer App",
+    "slug": "building-a-real-time-multiplayer-app",
+    "file": "/blog/multiplayer.md",
+    "color": "matcha"
+  },
+  {
+    "title": "Designing My Matcha Game",
+    "slug": "designing-my-matcha-game",
+    "file": "/blog/matcharia.md",
+    "color": "berry"
+  }
+]
