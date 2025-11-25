@@ -1,3 +1,5 @@
+//ideas: pixelate the round pages
+//change background to a patern with lil cups, tables, plants like a pattern
 import React from "react";
 
 export default function Home() {
@@ -26,13 +28,15 @@ export default function Home() {
 
         
         {/* Dialogue Box */}
-            <div className="flex items-start gap-4 mt-10 
-                bg-matcha
-                border-4 border-light-sage 
-                rounded-2xl 
-                p-5 
+            <div className="flex items-start gap-4 mt-10 mb-10
+                bg-matcha 
+                rounded 3xl
+                border-4
+                border-matcha1
+                p-5
                 shadow-md 
-                max-w-7xl">
+                max-w-7xl
+                pixel-bubble"style={{ "--pixel-color": "var(--color-matcha1)" }}>
 
                 {/* Character Avatar */}
                 <img 
@@ -53,16 +57,11 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Dialogue Arrow */}
-            <div className="ml-40 mt-1 text-mocha text-lg select-none">
-                ▼
-            </div>
-
             {/* Main container */}
-            <div className="bg-matcha rounded-3xl p-15 shadow-md mb-20">
+            <div className="bg-matcha rounded-3xl p-15 shadow-md mb-20 pixel-bubble">
 
             {/* Intro box */}
-            <div className="bg-matcha1 rounded-3xl p-10 text-cream mb-8 shadow-sm">
+            <div className="bg-matcha1 rounded-3xl p-10 text-cream mb-8 shadow-sm pixel-bubble">
                 <p className="leading-relaxed text-[15px]">
                 I’m Juveria, a recent grad in CS, Cog Sci, and Math who loves building
                 projects that blend logic and creativity. My recent work has been in Machine Learning,
@@ -75,7 +74,7 @@ export default function Home() {
             </div>
 
             {/* Tech stack box */}
-            <div className="bg-matcha1 rounded-3xl p-6 text-cream shadow-sm">
+            <div className="bg-matcha1 rounded-3xl p-6 text-cream shadow-sm pixel-bubble">
                 <h2 className="font-semibold text-lg mb-2">My Tech Stack:</h2>
                 <p className="text-[14px] leading-relaxed">
                 Languages: Python, Java, JavaScript/TypeScript, C++, SQL, HTML/CSS <br />
@@ -88,7 +87,7 @@ export default function Home() {
 
             <a
                 href="/projects"
-                className="mt-6 inline-block bg-latte text-white font-semibold px-6 py-3 rounded-2xl shadow hover:bg-mocha transition-all"
+                className="mt-6 inline-block bg-latte text-white font-semibold px-6 py-3 rounded-2xl shadow hover:bg-mocha transition-all pixel-bubble"
             >
                 View My Projects!
             </a>

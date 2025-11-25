@@ -51,9 +51,9 @@ export default function BlogPost() {
       <div 
         className="
           p-8 rounded-3xl shadow-sm leading-relaxed
-          bg-light-sage
-          text-latte
+          bg-matcha
           prose prose-custom
+          pixel-bubble
         "
       >
         <ReactMarkdown 

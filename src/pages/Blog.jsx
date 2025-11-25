@@ -18,7 +18,7 @@ export default function Blog() {
       Juvi’s Journal
     </h1>
 
-    <div className="max-w-3xl mx-auto space-y-10">
+    <div className="max-w-3xl mx-auto space-y-10 ">
       {posts.map((post) => (
         <Link
           key={post.slug}
@@ -31,6 +31,7 @@ export default function Blog() {
               bg-matcha
               hover:bg-[var(--color-matcha)]/30
               transition-colors duration-300
+              pixel-bubble
             "
           >
             <h2 className="text-xl font-semibold text-[var(--color-mocha)] mb-3">

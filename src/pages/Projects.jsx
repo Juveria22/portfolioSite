@@ -26,6 +26,7 @@ export default function Projects() {
           border border-matcha/30
           w-full
           max-w-6xl
+          pixel-bubble
         "
       >
 

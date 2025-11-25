@@ -54,56 +54,98 @@
 /* --------------------------------------------- */
 @layer utilities {
 
-  @keyframes fade {
-    0% { opacity: 0; transform: translateY(4px); }
-    20% { opacity: 1; transform: translateY(0); }
-    80% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0; transform: translateY(-4px); }
-  }
+    @keyframes fade {
+        0% { opacity: 0; transform: translateY(4px); }
+        20% { opacity: 1; transform: translateY(0); }
+        80% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(-4px); }
+    }
 
-  .animate-fade {
-    animation: fade 3s ease forwards;
-  }
+    .animate-fade {
+        animation: fade 3s ease forwards;
+    }
 
-  /* Custom prose (blog markdown) */
-  .prose-custom h1,
-  .prose-custom h2,
-  .prose-custom h3,
-  .prose-custom h4 {
-    color: var(--color-mocha);
-    font-weight: 700;
-  }
+    /* Custom prose (blog markdown) */
+    .prose-custom h1,
+    .prose-custom h2,
+    .prose-custom h3,
+    .prose-custom h4 {
+        color: var(--color-mocha);
+        font-weight: 700;
+    }
 
-  .prose-custom p,
-  .prose-custom li,
-  .prose-custom code {
-    color: var(--color-mocha);
-  }
+    .prose-custom p,
+    .prose-custom li,
+    .prose-custom code {
+        color: var(--color-mocha);
+    }
 
-  .prose-custom strong {
-    color: var(--color-mocha);
-  }
+    .prose-custom strong {
+        color: var(--color-mocha);
+    }
 
-  .prose-custom a {
-    color: var(--color-latte);
-    text-decoration: none;
-  }
+    .prose-custom a {
+        color: var(--color-latte);
+        text-decoration: none;
+    }
 
-  .prose-custom a:hover {
-    text-decoration: underline;
-  }
+    .prose-custom a:hover {
+        text-decoration: underline;
+    }
 
-  .prose-custom code {
-    background: rgba(255,255,255,0.3);
-    padding: 2px 5px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-  }
+    .prose-custom code {
+        background: rgba(255,255,255,0.3);
+        padding: 2px 5px;
+        border-radius: 6px;
+        font-size: 0.9rem;
+    }
 
-  .prose-custom pre {
-    background: rgba(255,255,255,0.4);
-    padding: 12px;
-    border-radius: 10px;
-    overflow-x: auto;
+    .prose-custom pre {
+        background: rgba(255,255,255,0.4);
+        padding: 12px;
+        border-radius: 10px;
+        overflow-x: auto;
+    }
+      /* Extract border/background colors into a stable variable */
+  .pixel-bubble {
+  clip-path: polygon(
+    0px calc(100% - 20px),
+    4px calc(100% - 20px),
+    4px calc(100% - 12px),
+    8px calc(100% - 12px),
+    8px calc(100% - 8px),
+    12px calc(100% - 8px),
+    12px calc(100% - 4px),
+    20px calc(100% - 4px),
+    20px 100%,
+    calc(100% - 20px) 100%,
+    calc(100% - 20px) calc(100% - 4px),
+    calc(100% - 12px) calc(100% - 4px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 4px) calc(100% - 12px),
+    calc(100% - 4px) calc(100% - 20px),
+    100% calc(100% - 20px),
+    100% 20px,
+    calc(100% - 4px) 20px,
+    calc(100% - 4px) 12px,
+    calc(100% - 8px) 12px,
+    calc(100% - 8px) 8px,
+    calc(100% - 12px) 8px,
+    calc(100% - 12px) 4px,
+    calc(100% - 20px) 4px,
+    calc(100% - 20px) 0px,
+    20px 0px,
+    20px 4px,
+    12px 4px,
+    12px 8px,
+    8px 8px,
+    8px 12px,
+    4px 12px,
+    4px 20px,
+    0px 20px
+  );
+    image-rendering:pixelated;
   }
 }

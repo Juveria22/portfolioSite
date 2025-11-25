@@ -42,7 +42,7 @@ export default function Contact() {
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="w-full max-w-6xl mx-auto bg-matcha p-10 rounded-3xl shadow-sm"
+        className="w-full max-w-6xl mx-auto bg-matcha p-10 rounded-3xl shadow-sm pixel-bubble"
       >
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -54,7 +54,7 @@ export default function Contact() {
             name="user_name"
             placeholder="Name"
             required
-            className="w-full p-3 rounded-xl bg-light-sage/40 text-mocha placeholder-mocha/60 focus:outline-none"
+            className="w-full p-3 rounded-xl bg-light-sage/40 text-mocha placeholder-mocha/60 focus:outline-none pixel-bubble"
           />
 
           <input
@@ -62,14 +62,14 @@ export default function Contact() {
             name="user_email"
             placeholder="Email"
             required
-            className="w-full p-3 rounded-xl bg-light-sage/40 text-mocha placeholder-mocha/60 focus:outline-none"
+            className="w-full p-3 rounded-xl bg-light-sage/40 text-mocha placeholder-mocha/60 focus:outline-none pixel-bubble"
           />
 
           <input
             type="tel"
             name="user_phone"
             placeholder="Phone"
-            className="w-full p-3 rounded-xl bg-light-sage/40 text-mocha placeholder-mocha/60 focus:outline-none"
+            className="w-full p-3 rounded-xl bg-light-sage/40 text-mocha placeholder-mocha/60 focus:outline-none pixel-bubble"
           />
         </div>
 
@@ -77,11 +77,11 @@ export default function Contact() {
           placeholder="Write your message here!"
           rows={6}
           required
-          className="w-full p-4 rounded-xl bg-light-sage/40 text-mocha placeholder-mocha/50 focus:outline-none"
+          className="w-full p-4 rounded-xl bg-light-sage/40 text-mocha placeholder-mocha/50 focus:outline-none pixel-bubble"
         />
 
         <div className="flex flex-col items-center mt-8">
-          <button className="px-10 py-3 bg-mocha text-white font-semibold rounded-xl shadow hover:bg-mocha transition">
+          <button className="px-10 py-3 bg-mocha text-white font-semibold rounded-xl shadow hover:bg-mocha transition pixel-bubble">
             Submit
           </button>
 
