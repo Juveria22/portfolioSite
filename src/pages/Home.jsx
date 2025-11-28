@@ -1,6 +1,7 @@
 //ideas: pixelate the round pages
 //change background to a patern with lil cups, tables, plants like a pattern
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     const [displayed, setDisplayed] = React.useState("");
@@ -85,12 +86,12 @@ export default function Home() {
                 </p>
             </div>
 
-            <a
-                href="/projects"
+            <Link
+                to="/projects"
                 className="mt-6 inline-block bg-latte text-white font-semibold px-6 py-3 rounded-2xl shadow hover:bg-mocha transition-all pixel-bubble"
             >
                 View My Projects!
-            </a>
+            </Link>
 
             </div>
         </div>
