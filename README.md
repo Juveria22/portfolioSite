@@ -63,13 +63,30 @@ Design
 
 Custom pixel art (self-made)
 Original audio/music
-Responsive layouts
+# Portfolio Cafe
 
-Deployment
+A cafe-themed portfolio website featuring pixel art, calming music, and a creative presentation of my projects and experience.
 
-Render
+## Features
 
-Project Structure
+- Custom pixel art graphics and animations
+- Calming background music for ambiance
+- Cafe menu-style project showcase (projects displayed as drinks)
+- Blog page for technical writing and updates
+- Contact page with form
+- Fully responsive layouts
+
+## Tech Stack
+
+- **Frontend:** React, Tailwind CSS
+- **Deployment:** Render
+
+## Live Site
+
+https://portfoliosite-efrb.onrender.com
+
+## Project Structure
+```
 portfolio-site/
 ├── public/
 │   ├── assets/
@@ -95,14 +112,18 @@ portfolio-site/
 │   └── index.js
 ├── package.json
 └── README.md
-Installation
-Prerequisites
+```
 
-Node.js (v14 or higher)
-npm or yarn
+## Installation
 
-Setup
-bash# Clone the repository
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Setup
+```bash
+# Clone the repository
 git clone https://github.com/yourusername/portfolio-site.git
 cd portfolio-site
 
@@ -111,37 +132,47 @@ npm install
 
 # Start development server
 npm start
+```
+
 The site will be running at http://localhost:3000
-Build for Production
-bash# Create optimized production build
+
+## Build for Production
+```bash
+# Create optimized production build
 npm run build
+```
 
-# The build folder will contain production-ready files
-Pages Overview
-Home
+The build folder will contain production-ready files.
+
+## Pages Overview
+
+### Home
 Welcome page with cafe entrance theme, introducing visitors to the portfolio experience.
-Menu (Projects)
+
+### Menu (Projects)
 Projects displayed as cafe drinks with creative names. Each item includes:
+- Project thumbnail/icon
+- "Drink" name (project title)
+- Description (ingredients = tech stack)
+- Link to live demo and code
 
-Project thumbnail/icon
-"Drink" name (project title)
-Description (ingredients = tech stack)
-Link to live demo and code
-
-Blog
+### Blog
 Technical articles and personal thoughts about development, presented in a clean, readable format with cafe-inspired accents.
-Contact
+
+### Contact
 Get in touch section with:
+- Contact form
+- Email address
+- Social media links (GitHub, LinkedIn, etc.)
+- Download resume option
 
-Contact form
-Email address
-Social media links (GitHub, LinkedIn, etc.)
-Download resume option
+## Customization
 
-Customization
-Adding New Projects
-Edit the projects data in src/data/projects.js:
-javascript{
+### Adding New Projects
+
+Edit the projects data in `src/data/projects.js`:
+```javascript
+{
   id: 1,
   name: "Matcha Latte",        // Creative drink name
   title: "MatchaAI",            // Actual project name
@@ -151,9 +182,13 @@ javascript{
   liveUrl: "https://...",
   githubUrl: "https://github.com/..."
 }
-Changing Theme Colors
-Tailwind configuration in tailwind.config.js:
-javascriptmodule.exports = {
+```
+
+### Changing Theme Colors
+
+Tailwind configuration in `tailwind.config.js`:
+```javascript
+module.exports = {
   theme: {
     extend: {
       colors: {
@@ -166,17 +201,12 @@ javascriptmodule.exports = {
     }
   }
 }
+```
 Adding Blog Posts
 Create new markdown files in src/content/blog/ or add to the blog data structure.
 Design Philosophy
 The cafe theme was chosen to create a warm, approachable portfolio that stands out from traditional developer portfolios. The pixel art aesthetic adds personality while maintaining professionalism, and the calming music creates an immersive browsing experience.
 Projects are presented as drinks to make technical work more accessible and memorable to visitors, whether they are recruiters, fellow developers, or clients.
-Performance
-
-Lighthouse score: 95+ performance
-Optimized images with lazy loading
-Code splitting for faster initial load
-Minimal dependencies for small bundle size
 
 Browser Support
 
